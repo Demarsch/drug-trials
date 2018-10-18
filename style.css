@@ -1,0 +1,52 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.navbar {
+    border-width: 0 0 1px 0;
+    border-color: cornflowerblue;
+    border-style: solid;
+    padding: 0;
+    flex: none;
+}
+
+.navbar-brand {
+    padding: 1rem;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.body {
+    flex: auto;
+    overflow: auto;
+    padding: 1rem 2rem;
+    background-color: rgb(182, 201, 235);
+}
+
+footer {
+    border-top: 0.5rem solid rgb(78, 113, 177);
+    padding: 1rem 0;
+    background-color: cornflowerblue;
+    color: white;
+    flex: none;
+}
+
+.cell {
+    padding: 1rem;
+}
+
+section {
+    background-color: white;
+    padding: 1rem;
+}
+
+footer p {   
+    margin: 0;
+    text-align: center;
+}
