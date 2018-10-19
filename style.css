@@ -37,13 +37,40 @@ footer {
     flex: none;
 }
 
-.cell {
-    padding: 1rem;
-}
-
 section {
     background-color: white;
     padding: 1rem;
+    margin: 1rem;
+    -webkit-box-shadow: 10px 10px 10px 2px rgba(133,133,133,1);
+    -moz-box-shadow: 10px 10px 10px 2px rgba(133,133,133,1);
+    box-shadow: 10px 10px 10px 2px rgba(133,133,133,1);
+}
+
+.main-img {
+    width: 250px;
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.viz-img {
+    width: calc(100% - 1rem);
+    margin: 0.5 rem;
+}
+
+.home-main-sec {
+    min-height: 300px;
+}
+
+section .section-header {
+    color: cornflowerblue;
+    margin: 0.5rem;
+    margin-left: 0;
+    border-bottom: 2px solid cornflowerblue;
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    color: dimgray;
 }
 
 footer p {   

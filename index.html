@@ -16,10 +16,10 @@
                 Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Metastatic Response to Treatment</a>
-            <a class="dropdown-item" href="#">Survival During Treatment</a>
-            <a class="dropdown-item" href="#">Tumor Response to Treatment</a>
-            <a class="dropdown-item" href="#">Tumor Volume Change over Treatment</a>
+                <a class="dropdown-item" href="#">Metastatic Response to Treatment</a>
+                <a class="dropdown-item" href="#">Survival During Treatment</a>
+                <a class="dropdown-item" href="#">Tumor Response to Treatment</a>
+                <a class="dropdown-item" href="#">Tumor Volume Change over Treatment</a>
             </div>
         </div>
         <div class="nav-item">
@@ -33,10 +33,36 @@
     <div class="body container-fluid">
         <div class="row">
             <div class="col-md-8 cell">
-                <section></section>
+                <section class="home-main-sec">
+                    <h1 class="section-header">Summary: Drug Clinical Trials</h1>
+                    <img src="img/metastatic.png" class="main-img" >
+                    <p>The clinical study were performed to test 3 new anti-cancer drug-based treatments. During these studies,  250 mice were treated through a variety of drug regimes over the course of 45 days. Their physiological responses were then monitored over the course of that time.</p>
+                    <p>Raw data was stored in two CSV files: one for the list of mice and the treatment they've received, another one for the data on metastatic sites count and tumor volume over period of time.</p>
+                    <p>The analysis of the data was done using <strong>Python</strong> and <strong>pandas</strong> library. The visualizations were built using <strong>matplotlib</strong> library.</p>
+                </section>
             </div>
             <div class="col-md-4 cell">
-                <section></section>
+                <section>
+                    <h1 class="section-header">Visualizations</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/metastatic.png" class="viz-img" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/survival.png" class="viz-img" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/tumor.png" class="viz-img" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/tumor_vol.png" class="viz-img" />
+                            </div>
+                        </div>                        
+                    </div>
+                </section>
             </div>
         </div>
     </div>
