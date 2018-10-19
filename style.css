@@ -10,6 +10,7 @@ body {
 
 .navbar {
     border-width: 0 0 1px 0;
+    background-color: cornflowerblue;
     border-color: cornflowerblue;
     border-style: solid;
     padding: 0;
@@ -54,6 +55,7 @@ section {
 
 .viz-img {
     width: calc(100% - 1rem);
+    min-width: 150px;
     margin: 0.5 rem;
 }
 
@@ -61,12 +63,17 @@ section {
     min-height: 300px;
 }
 
-section .section-header {
+.no-pad {
+    padding: 0;
+}
+
+.sec-h {
     color: cornflowerblue;
     margin: 0.5rem;
     margin-left: 0;
     border-bottom: 2px solid cornflowerblue;
     padding-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
 section p {
@@ -76,4 +83,23 @@ section p {
 footer p {   
     margin: 0;
     text-align: center;
+}
+
+/* Small screen */
+@media(min-width:576px) {  
+    .navbar {
+        background-color: white;
+    }
+    
+    .sec-h-lg {
+        font-size: 1.8rem;
+    }
+}
+
+/* Medium screen */
+@media(min-width:720px) {  
+}
+
+/* Large screen */
+@media(min-width:992px) {
 }
