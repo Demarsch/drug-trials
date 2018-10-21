@@ -11,11 +11,11 @@
 <body>
     <nav class="navbar">
         <a class="navbar-brand mr-auto" href="index.html">Drug Clinical Trials</a>
-        <div class="dropdown">
-            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="dropdown nav-item">
+            <a class="nav-link dropdown-toggle" href="/" id="sm-plots-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plots
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu" aria-labelledby="sm-plots-link">
                 <a class="dropdown-item" href="metastatic.html">Metastatic Response to Treatment</a>
                 <a class="dropdown-item" href="survival.html">Survival During Treatment</a>
                 <a class="dropdown-item" href="tumor.html">Tumor Response to Treatment</a>
@@ -28,6 +28,25 @@
         </div>
         <div class="nav-item">
             <a class="nav-link" href="data.html">Data</a>
+        </div>
+        
+        <button type="button" class="btn navbar-toggle mr-2" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <a class="dropdown-item navbar-toggle dropdown-toggle" href="#" id="xs-plots-link" data-toggle="collapse" data-target="#xs-plots" aria-haspopup="true" aria-expanded="false">
+                Plots
+            </a>
+            <div class="collapse" id="xs-plots">
+                <a class="dropdown-item ml-2" href="metastatic.html">Metastatic Response to Treatment</a>
+                <a class="dropdown-item ml-2" href="survival.html">Survival During Treatment</a>
+                <a class="dropdown-item ml-2" href="tumor.html">Tumor Response to Treatment</a>
+                <a class="dropdown-item ml-2" href="tumor_vol.html">Tumor Volume Change over Treatment</a>
+            </div>
+            <a class="dropdown-item" href="comparison.html">Comparison</a>
+            <a class="dropdown-item" href="data.html">Data</a>
         </div>
     </nav>
     <div class="body container-fluid">
