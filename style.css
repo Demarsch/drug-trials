@@ -49,7 +49,8 @@ section {
 }
 
 .main-img {
-    width: 250px;
+    max-width:50%;
+    min-width: 260px;
     float: left;
     margin: 0 1rem 1rem 0;
 }
@@ -143,8 +144,29 @@ footer p {
         background-color: cornflowerblue;
     }
 
+    .nav-tabs .nav-item {
+        display: block;
+        color: cornflowerblue;
+    }
+
+    .nav-tabs a.nav-link {
+        color: cornflowerblue;
+    }
+
     a:hover {
         color: #3F3F3F;
+    }
+
+    #trial-data table, #mouse-data table {
+        font-size: 75%;
+    }
+
+    .body {
+        padding: 0;
+    }
+
+    section {
+        margin: 0;
     }
 }
 
