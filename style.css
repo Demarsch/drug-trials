@@ -17,12 +17,10 @@ a.dropdown-item {
     background-color: cornflowerblue;
     border-color: cornflowerblue;
     border-style: solid;
-    padding: 0;
     flex: none;
 }
 
 .navbar-brand {
-    padding: 1rem;
     background-color: cornflowerblue;
     color: white;
 }
@@ -30,7 +28,6 @@ a.dropdown-item {
 .body {
     flex: auto;
     overflow: auto;
-    padding: 1rem 2rem;
     background-color: rgb(182, 201, 235);
 }
 
@@ -72,14 +69,6 @@ section {
 
 .vis-img-current {
     border-color: cornflowerblue;
-}
-
-.home-main-sec {
-    min-height: 300px;
-}
-
-.no-pad {
-    padding: 0;
 }
 
 .sec-h {
