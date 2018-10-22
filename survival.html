@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,51 +10,50 @@
 </head>
 <body>
     <nav class="navbar p-0">
-            <a class="navbar-brand p-3 mr-auto" href="index.html">Drug Clinical Trials</a>
-            <div class="dropdown nav-item">
-                <a class="nav-link dropdown-toggle" href="/" id="sm-plots-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plots
-                </a>
-                <div class="dropdown-menu" aria-labelledby="sm-plots-link">
-                    <a class="dropdown-item" href="metastatic.html">Metastatic Response to Treatment</a>
-                    <a class="dropdown-item" href="survival.html">Survival During Treatment</a>
-                    <a class="dropdown-item" href="tumor.html">Tumor Response to Treatment</a>
-                    <a class="dropdown-item" href="tumor_vol.html">Tumor Volume Change over Treatment</a>
-                </div>
+        <a class="navbar-brand p-3 mr-auto" href="index.html">Drug Clinical Trials</a>
+        <div class="dropdown nav-item">
+            <a class="nav-link dropdown-toggle" href="/" id="sm-plots-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="sm-plots-link">
+                <a class="dropdown-item" href="metastatic.html">Metastatic Response to Treatment</a>
+                <a class="dropdown-item" href="survival.html">Survival During Treatment</a>
+                <a class="dropdown-item" href="tumor.html">Tumor Response to Treatment</a>
+                <a class="dropdown-item" href="tumor_vol.html">Tumor Volume Change over Treatment</a>
             </div>
-            <div class="nav-item">
-                <a class="nav-link" href="comparison.html">Comparision</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparision</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+        </div>
+        
+        <button type="button" class="btn navbar-toggle mr-2" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <a class="dropdown-item navbar-toggle dropdown-toggle" href="#" id="xs-plots-link" data-toggle="collapse" data-target="#xs-plots" aria-haspopup="true" aria-expanded="false">
+                Plots
+            </a>
+            <div class="collapse" id="xs-plots">
+                <a class="dropdown-item ml-2" href="metastatic.html">Metastatic Response to Treatment</a>
+                <a class="dropdown-item ml-2" href="survival.html">Survival During Treatment</a>
+                <a class="dropdown-item ml-2" href="tumor.html">Tumor Response to Treatment</a>
+                <a class="dropdown-item ml-2" href="tumor_vol.html">Tumor Volume Change over Treatment</a>
             </div>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
-            </div>
-            
-            <button type="button" class="btn navbar-toggle mr-2" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <a class="dropdown-item navbar-toggle dropdown-toggle" href="#" id="xs-plots-link" data-toggle="collapse" data-target="#xs-plots" aria-haspopup="true" aria-expanded="false">
-                    Plots
-                </a>
-                <div class="collapse" id="xs-plots">
-                    <a class="dropdown-item ml-2" href="metastatic.html">Metastatic Response to Treatment</a>
-                    <a class="dropdown-item ml-2" href="survival.html">Survival During Treatment</a>
-                    <a class="dropdown-item ml-2" href="tumor.html">Tumor Response to Treatment</a>
-                    <a class="dropdown-item ml-2" href="tumor_vol.html">Tumor Volume Change over Treatment</a>
-                </div>
-                <a class="dropdown-item" href="comparison.html">Comparison</a>
-                <a class="dropdown-item" href="data.html">Data</a>
-            </div>
-        </nav>
+            <a class="dropdown-item" href="comparison.html">Comparison</a>
+            <a class="dropdown-item" href="data.html">Data</a>
+        </div>
+    </nav>
     <div class="body container-fluid p-x-4 p-y-4">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-7 cell">
                 <section class="home-main-sec shadow-lg">
                     <h1 class="sec-h">Survival During Treatment</h1>
-                    <img src="img/survival.png" class="vis-img-main" >
+                    <img src="img/survival.png" class="vis-img-main" alt="Survival during treatment" >
                     <p>Looking at the Survival Rate and its T-test results we can say that Ketapril and Infubinol showed no significant difference comparing to Placebo but the Capomulin treatment boosts the chances to survive almost by the factor of 2.</p>
                 </section>
             </div>
@@ -64,16 +63,16 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
-                                <a href="metastatic.html"><img src="img/metastatic.png" class="vis-img" /></a>
+                                <a href="metastatic.html"><img src="img/metastatic.png" class="vis-img" alt="Metastatic response to treatment"  /></a>
                             </div>
                             <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
-                                <a href="survival.html"><img src="img/survival.png" class="vis-img vis-img-current" /></a>
+                                <a href="survival.html"><img src="img/survival.png" class="vis-img vis-img-current" alt="Survival during treatment" /></a>
                             </div>
                             <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
-                                <a href="tumor.html"><img src="img/tumor.png" class="vis-img" /></a>
+                                <a href="tumor.html"><img src="img/tumor.png" class="vis-img" alt="Tumor response to treatment"/></a>
                             </div>
                             <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
-                                <a href="tumor_vol.html"><img src="img/tumor_vol.png" class="vis-img" /></a>
+                                <a href="tumor_vol.html"><img src="img/tumor_vol.png" class="vis-img" alt="Tumor volume change over treatment"/></a>
                             </div>
                         </div>                        
                     </div>
