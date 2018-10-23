@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Drug Clinical Trials</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-</head>
-<body>
-    <nav class="navbar p-0">
-        <a class="navbar-brand p-3 mr-auto" href="index.html">Drug Clinical Trials</a>
-        <div class="dropdown nav-item">
-            <a class="nav-link dropdown-toggle" href="/" id="sm-plots-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="sm-plots-link">
-                <a class="dropdown-item" href="metastatic.html">Metastatic Response to Treatment</a>
-                <a class="dropdown-item" href="survival.html">Survival During Treatment</a>
-                <a class="dropdown-item" href="tumor.html">Tumor Response to Treatment</a>
-                <a class="dropdown-item" href="tumor_vol.html">Tumor Volume Change over Treatment</a>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Drug Clinical Trials</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    </head>
+    <body>
+        <nav class="navbar p-0">
+            <a class="navbar-brand p-3 mr-auto" href="index.html">Drug Clinical Trials</a>
+            <div class="dropdown nav-item">
+                <a class="nav-link dropdown-toggle" href="/" id="sm-plots-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="sm-plots-link">
+                    <a class="dropdown-item" href="metastatic.html">Metastatic Response to Treatment</a>
+                    <a class="dropdown-item" href="survival.html">Survival During Treatment</a>
+                    <a class="dropdown-item" href="tumor.html">Tumor Response to Treatment</a>
+                    <a class="dropdown-item" href="tumor_vol.html">Tumor Volume Change over Treatment</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparision</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+            </div>
+            
+            <button type="button" class="btn navbar-toggle mr-2" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <a class="dropdown-item navbar-toggle dropdown-toggle" href="#" id="xs-plots-link" data-toggle="collapse" data-target="#xs-plots" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                </a>
+                <div class="collapse" id="xs-plots">
+                    <a class="dropdown-item ml-2" href="metastatic.html">Metastatic Response to Treatment</a>
+                    <a class="dropdown-item ml-2" href="survival.html">Survival During Treatment</a>
+                    <a class="dropdown-item ml-2" href="tumor.html">Tumor Response to Treatment</a>
+                    <a class="dropdown-item ml-2" href="tumor_vol.html">Tumor Volume Change over Treatment</a>
+                </div>
+                <a class="dropdown-item" href="comparison.html">Comparison</a>
+                <a class="dropdown-item" href="data.html">Data</a>
+            </div>
+        </nav>
+        <div class="body container-fluid p-x-4 p-y-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-7 cell">
+                    <section class="shadow-lg clearfix">
+                        <h1 class="sec-h">Summary: Drug Clinical Trials</h1>
+                        <img src="img/metastatic.png" class="main-img" alt="Metastatic response to treatment" >
+                        <p>The clinical study were performed to test 3 new anti-cancer drug-based treatments. During these studies, 250 mice were treated through a variety of drug regimes over the course of 45 days. Their physiological responses were then monitored over the course of that time.</p>
+                        <p>Raw data was stored in two CSV files: one for the list of mice and the treatment they've received, another one for the data on metastatic sites count and tumor volume over period of time. The data can be found on the <a href="data.html">Data</a> page</p>
+                        <p>The analysis of the data was done using <strong>Python</strong> and <strong>pandas</strong> library. The visualizations were built using <strong>matplotlib</strong> library.</p>
+                        <p>The visualizations section has links to all research items together with the conclusions made based on the chart. The <a href="comparision.html">Comparison</a> page contains all the visualizations side-by-side</p>
+                    </section>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5 cell">
+                    <section class="shadow-lg">
+                        <h1 class="sec-h">Visualizations</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
+                                    <a href="metastatic.html"><img src="img/metastatic.png" class="vis-img" alt="Metastatic response to treatment" /></a>
+                                </div>
+                                <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
+                                    <a href="survival.html"><img src="img/survival.png" class="vis-img" alt="Survival during treatment" /></a>
+                                </div>
+                                <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
+                                    <a href="tumor.html"><img src="img/tumor.png" class="vis-img" alt="Tumor response to treatment"/></a>
+                                </div>
+                                <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
+                                    <a href="tumor_vol.html"><img src="img/tumor_vol.png" class="vis-img" alt="Tumor volume change over treatment" /></a>
+                                </div>
+                            </div>                        
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
-        <div class="nav-item">
-            <a class="nav-link" href="comparison.html">Comparision</a>
-        </div>
-        <div class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
-        </div>
-        
-        <button type="button" class="btn navbar-toggle mr-2" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <a class="dropdown-item navbar-toggle dropdown-toggle" href="#" id="xs-plots-link" data-toggle="collapse" data-target="#xs-plots" aria-haspopup="true" aria-expanded="false">
-                Plots
-            </a>
-            <div class="collapse" id="xs-plots">
-                <a class="dropdown-item ml-2" href="metastatic.html">Metastatic Response to Treatment</a>
-                <a class="dropdown-item ml-2" href="survival.html">Survival During Treatment</a>
-                <a class="dropdown-item ml-2" href="tumor.html">Tumor Response to Treatment</a>
-                <a class="dropdown-item ml-2" href="tumor_vol.html">Tumor Volume Change over Treatment</a>
-            </div>
-            <a class="dropdown-item" href="comparison.html">Comparison</a>
-            <a class="dropdown-item" href="data.html">Data</a>
-        </div>
-    </nav>
-    <div class="body container-fluid p-x-4 p-y-4">
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-7 cell">
-                <section class="shadow-lg clearfix">
-                    <h1 class="sec-h">Summary: Drug Clinical Trials</h1>
-                    <img src="img/metastatic.png" class="main-img" alt="Metastatic response to treatment" >
-                    <p>The clinical study were performed to test 3 new anti-cancer drug-based treatments. During these studies, 250 mice were treated through a variety of drug regimes over the course of 45 days. Their physiological responses were then monitored over the course of that time.</p>
-                    <p>Raw data was stored in two CSV files: one for the list of mice and the treatment they've received, another one for the data on metastatic sites count and tumor volume over period of time. The data can be found on the <a href="data.html">Data</a> page</p>
-                    <p>The analysis of the data was done using <strong>Python</strong> and <strong>pandas</strong> library. The visualizations were built using <strong>matplotlib</strong> library.</p>
-                    <p>The visualizations section has links to all research items together with the conclusions made based on the chart. The <a href="comparision.html">Comparison</a> page contains all the visualizations side-by-side</p>
-                </section>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-5 cell">
-                <section class="shadow-lg">
-                    <h1 class="sec-h">Visualizations</h1>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
-                                <a href="metastatic.html"><img src="img/metastatic.png" class="vis-img" alt="Metastatic response to treatment" /></a>
-                            </div>
-                            <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
-                                <a href="survival.html"><img src="img/survival.png" class="vis-img" alt="Survival during treatment" /></a>
-                            </div>
-                            <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
-                                <a href="tumor.html"><img src="img/tumor.png" class="vis-img" alt="Tumor response to treatment"/></a>
-                            </div>
-                            <div class="col-xs-3 col-sm-6 col-md-12 col-lg-6 p-0">
-                                <a href="tumor_vol.html"><img src="img/tumor_vol.png" class="vis-img" alt="Tumor volume change over treatment" /></a>
-                            </div>
-                        </div>                        
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-    <footer>            
-        <p>© Copyright Andrei Chaplygin 2018</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
-</body>
+        <footer>            
+            <p>© Copyright Andrei Chaplygin 2018</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+    </body>
 </html>
